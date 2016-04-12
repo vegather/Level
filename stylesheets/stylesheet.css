@@ -51,6 +51,7 @@ Theme Styles
 body {
   box-sizing: border-box;
   color:#373737;
+/*   height: 100%; */
 /*   background: #212121; */
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
@@ -287,6 +288,8 @@ Full-Width Styles
   background: -ms-linear-gradient(top, #FA9A14, #fa8014);
   background: -o-linear-gradient(top, #FA9A14, #fa8014);
   background: linear-gradient(top, #FA9A14, #fa8014);
+  
+  height: 210px;
 }
 
 #header_wrap .inner {
@@ -317,8 +320,23 @@ Full-Width Styles
 }
 */
 
+html, body {
+	height: 100%;
+}
+
+#main_content_wrap {
+	min-height: calc(100% - 250px); /* header_wrap.height + main_content.margin-top */
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -130px;
+/*
+	position: relative;
+	display: block;
+*/
+}
+
 #main_content {
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
 #footer_wrap {
@@ -328,7 +346,19 @@ Full-Width Styles
   background: -ms-linear-gradient(top, #FA9A14, #fa8014);
   background: -o-linear-gradient(top, #FA9A14, #fa8014);
   background: linear-gradient(top, #FA9A14, #fa8014);
+  
+  height: 130px;
+/*
+  z-index: 2;
+  position: relative;
+*/
+/*   font-size: 1.5em; */
+/*   text-align: center; */
+/*   margin: auto; */
+/*   padding-top: 80px; */
 }
+
+
 
 
 
