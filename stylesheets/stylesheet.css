@@ -14,6 +14,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+header {
+	display: flex;
+	flex-direction: row;
+}
+
 .section-heading {
 	margin: 0;
 }
@@ -159,8 +164,24 @@ Small Device Styles
 	}
 	
 	.inner {
-		min-width: 320px;
+/* 		min-width: 320px; */
 		max-width: 480px;
+	}
+	
+	#header_wrap .inner {
+		padding: 0;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	#header_wrap {
+		height: 250px;
+	}
+	
+	#heading-text {
+		margin-top: -10px;
 	}
 	
 	#project_title {
@@ -175,7 +196,15 @@ Small Device Styles
 	}
 	
 	#logo {
-		display: block;
+		height: 150px;
+		width: 150px;
+		float: none;
+		transform: none;
+		margin: 0 auto;
+	}
+	
+	#main_content {
+		padding: 0;
 	}
 	
 	h1 {
@@ -188,5 +217,11 @@ Small Device Styles
 	
 	h3 {
 		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 321px) {
+	.section-paragraph {
+		font-size: 3vh;
 	}
 }
