@@ -193,6 +193,7 @@ Small Device Styles
 	
 	.section-paragraph {
 		font-size: 2.5vh;
+		word-wrap: break-word;
 	}
 	
 	#logo {
